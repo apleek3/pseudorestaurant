@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 
 // Open Tables
-var tables = [
+var reservations = [
     {
       name: "",
       phone: 0,
@@ -65,7 +65,7 @@ var tables = [
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "view.html"));
+    res.sendFile(path.join(__dirname, "table-reservations.html"));
   });
   
   app.get("/make", function(req, res) {
@@ -123,5 +123,5 @@ app.get("/", function(req, res) {
   // =============================================================
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
-    console.log(tables);
+    console.log(reservations);
   });
