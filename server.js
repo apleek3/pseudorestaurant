@@ -13,6 +13,53 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// Open Tables
+var tables = [
+  {
+    Name: "",
+    Phone: 0,
+    Email: "",
+    ID: 0
+  }
+  // {
+  //   routeName: "darthmaul",
+  //   name: "Darth Maul",
+  //   role: "Sith Lord",
+  //   age: 200,
+  //   forcePoints: 1200
+  // },
+  // {
+  //   routeName: "obiwankenobi",
+  //   name: "Obi Wan Kenobi",
+  //   role: "Jedi Master",
+  //   age: 55,
+  //   forcePoints: 1350
+  // }
+];
+
+var waiting = [
+  {
+    Name: "",
+    Phone: 0,
+    Email: "",
+    ID: 0
+  }
+  // {
+  //   routeName: "darthmaul",
+  //   name: "Darth Maul",
+  //   role: "Sith Lord",
+  //   age: 200,
+  //   forcePoints: 1200
+  // },
+  // {
+  //   routeName: "obiwankenobi",
+  //   name: "Obi Wan Kenobi",
+  //   role: "Jedi Master",
+  //   age: 55,
+  //   forcePoints: 1350
+  // }
+];
+
 // Routes
 // =============================================================
 
@@ -76,4 +123,5 @@ app.get("/", function(req, res) {
   // =============================================================
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
+    console.log(tables);
   });
