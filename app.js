@@ -16,9 +16,6 @@ $("#reservation-btn").on("click", function() {
         $("#email").text(data.email);
         $("#id").text(data.id);
       }
-      else if data{
-
-      }
       else {
         $("#name").text("Here are the results.");
         $("#stats").hide();
