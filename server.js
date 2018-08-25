@@ -15,28 +15,49 @@ app.use(bodyParser.json());
 
 
 // Open Tables
-var characters = [
+var tables = [
     {
-      routeName: "yoda",
-      name: "Yoda",
-      role: "Jedi Master",
-      age: 900,
-      forcePoints: 2000
-    },
-    {
-      routeName: "darthmaul",
-      name: "Darth Maul",
-      role: "Sith Lord",
-      age: 200,
-      forcePoints: 1200
-    },
-    {
-      routeName: "obiwankenobi",
-      name: "Obi Wan Kenobi",
-      role: "Jedi Master",
-      age: 55,
-      forcePoints: 1350
+      name: "",
+      phone: 0,
+      email: "",
+      id: 0
     }
+    // {
+    //   routeName: "darthmaul",
+    //   name: "Darth Maul",
+    //   role: "Sith Lord",
+    //   age: 200,
+    //   forcePoints: 1200
+    // },
+    // {
+    //   routeName: "obiwankenobi",
+    //   name: "Obi Wan Kenobi",
+    //   role: "Jedi Master",
+    //   age: 55,
+    //   forcePoints: 1350
+    // }
+  ];
+  var waitlist = [
+    {
+      name: "",
+      phone: 0,
+      email: "",
+      id: 0
+    }
+    // {
+    //   routeName: "darthmaul",
+    //   name: "Darth Maul",
+    //   role: "Sith Lord",
+    //   age: 200,
+    //   forcePoints: 1200
+    // },
+    // {
+    //   routeName: "obiwankenobi",
+    //   name: "Obi Wan Kenobi",
+    //   role: "Jedi Master",
+    //   age: 55,
+    //   forcePoints: 1350
+    // }
   ];
 
 // Routes
@@ -102,4 +123,5 @@ app.get("/", function(req, res) {
   // =============================================================
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
+    console.log(tables);
   });
